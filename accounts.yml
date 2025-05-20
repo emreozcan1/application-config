@@ -1,12 +1,11 @@
-spring:
-  application:
-    name: "configserver"  # Name of the application
-  profiles:
-    active: native        # Using the native profile for configuration
-    cloud:                # This is incorrectly nested under profiles
-      config:
-        server:
-        native:
-          search-locations: "file:///Users//emreozcan//Documents//config" # Path to the config files
-server:
-  port: 8071              # Server will run on port 8071
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs "
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
